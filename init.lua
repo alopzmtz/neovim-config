@@ -8,7 +8,7 @@ require("alopezmtz.lazy")
 vim.g.loaded_tar = 1
 vim.g.loaded_zip = 1
 vim.g.loaded_gzip = 1
-vim.g.loaded_netrw = 1
+--vim.g.loaded_netrw = 1
 vim.g.loaded_vimball = 1
 vim.g.loaded_matchit = 1
 vim.g.loaded_logiPat = 1
@@ -59,13 +59,13 @@ local opts = { silent = true, noremap = true }
 
 vim.keymap.set("n", "<Leader>q", "<CMD>bd!<CR>", opts)
 vim.keymap.set("n", "<Leader>w", "<CMD>write!<CR>", opts)
-vim.keymap.set("n", "<Leader>e", "<CMD>NvimTreeToggle<CR>", opts)
+
 
 vim.keymap.set("n", "<Leader>fb", "<CMD>Telescope buffers<CR>", opts)
 vim.keymap.set("n", "<Leader>fg", "<CMD>Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<Leader>fh", "<CMD>Telescope help_tags<CR>", opts)
 vim.keymap.set("n", "<leader>fc", "<CMD>Telescope current_buffer_fuzzy_find<CR>", opts)
 vim.keymap.set("n", "<Leader>fa", "<CMD>Telescope find_files follow=true no_ignore=true hidden=true<CR>", opts)
-vim.keymap.set("n", "<Leader>ff", "<CMD>Telescope find_files follow=true no_ignore=false hidden=true<CR>", opts)
+vim.keymap.set("n", "<Leader>ff", "<CMD>Telescope find_files follow=true no_ignore=false hidden=false<CR>", opts)
 
 vim.keymap.set("i", "jk", "<ESC>", opts)
