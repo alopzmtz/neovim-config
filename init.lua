@@ -8,7 +8,7 @@ require("alopezmtz.lazy")
 vim.g.loaded_tar = 1
 vim.g.loaded_zip = 1
 vim.g.loaded_gzip = 1
---vim.g.loaded_netrw = 1
+vim.g.loaded_netrw = 1
 vim.g.loaded_vimball = 1
 vim.g.loaded_matchit = 1
 vim.g.loaded_logiPat = 1
