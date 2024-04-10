@@ -27,7 +27,7 @@ vim.g.loaded_netrwFileHandlers = 1
 -- options
 vim.opt.mouse = "a"
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "auto"
+vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "120"
 vim.opt.termguicolors = true
 vim.opt.isfname:append("@-@")
@@ -58,7 +58,7 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 local opts = { silent = true, noremap = true }
 
 vim.keymap.set("n", "<Leader>q", "<CMD>bd!<CR>", opts)
-vim.keymap.set("n", "<Leader>w", "<CMD>write!<CR>", opts)
+vim.keymap.set("n", "<Leader>s", "<CMD>write!<CR>", opts)
 
 
 vim.keymap.set("n", "<Leader>fb", "<CMD>Telescope buffers<CR>", opts)
