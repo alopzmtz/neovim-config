@@ -1,6 +1,6 @@
 return {
 	"stevearc/conform.nvim",
-	event = { "BufWritePre" },
+	event = { "BufReadPre", "BufNewFile" },
 	cmd = { "ConformInfo" },
 	keys = {
 		{
@@ -19,8 +19,14 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				css = { { "prettierd", "prettier" } },
+				html = { { "prettierd", "prettier" } },
+				json = { { "prettierd", "prettier" } },
+				yaml = { { "prettierd", "prettier" } },
+				svelte = { { "prettierd", "prettier" } },
+				markdown = { { "prettierd", "prettier" } },
 				javascript = { { "prettierd", "prettier" } },
+				typescript = { { "prettierd", "prettier" } },
 			},
 			format_on_save = function(bufnr)
 				-- Disable with a global or buffer-local variable
