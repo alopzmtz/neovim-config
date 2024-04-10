@@ -56,5 +56,4 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Non plugins keybinds
 local opts = { silent = true, noremap = true }
-
 vim.keymap.set("i", "jk", "<ESC>", opts)
