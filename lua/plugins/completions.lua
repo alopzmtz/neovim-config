@@ -8,6 +8,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"rafamadriz/friendly-snippets",
+    "onsails/lspkind.nvim"
 	},
 
 	config = function()
@@ -40,9 +41,21 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 			}, {
-				{ name = "buffer" },
+				{ name = "buffer", keyword_length = 5 },
 				{ name = "path" },
 			}),
 		})
+
+    formatting = {
+      format = require("lspkind").cmp_format({
+        with_text = true,
+        menu = {
+          buffer = "[BUF]",
+          nvim_lsp = "[LSP]",
+          path = "[PATH]",
+          luasnip = "[SNIP]"
+        }
+      })
+    }
 	end,
 }
