@@ -44,18 +44,18 @@ return {
 				{ name = "buffer", keyword_length = 5 },
 				{ name = "path" },
 			}),
-		})
 
-    formatting = {
-      format = require("lspkind").cmp_format({
-        with_text = true,
-        menu = {
-          buffer = "[BUF]",
-          nvim_lsp = "[LSP]",
-          path = "[PATH]",
-          luasnip = "[SNIP]"
-        }
-      })
-    }
-	end,
+      formatting = {
+        format = require("lspkind").cmp_format({
+          mode = "symbol_text",
+          menu = {
+            buffer = "[BUF]",
+            nvim_lsp = "[LSP]",
+            path = "[PATH]",
+            luasnip = "[SNIP]"
+          }
+        })
+      }
+    })
+  end,
 }

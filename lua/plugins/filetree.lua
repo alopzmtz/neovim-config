@@ -29,6 +29,10 @@ return {
 						quit_on_open = true,
 					},
 				},
+
+				update_focused_file = {
+					enable = true,
+				},
 			})
 
 			local opts = { silent = true, noremap = true }
