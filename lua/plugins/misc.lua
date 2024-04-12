@@ -16,5 +16,9 @@ return {
 	{
 		"tpope/vim-sleuth",
 		event = "VeryLazy",
-	}
+	},
+	{
+		"github/copilot.vim",
+		event= "VeryLazy"
+	},
 }
