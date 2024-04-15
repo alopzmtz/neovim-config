@@ -2,10 +2,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-require("alopezmtz.lazy")
-require("alopezmtz.opts")
-require("alopezmtz.keybinds")
-
 -- disable builtin plugins
 vim.g.loaded_tar = 1
 vim.g.loaded_zip = 1
@@ -25,3 +21,8 @@ vim.g.loaded_vimballPlugin = 1
 vim.g.loaded_netrwSettings = 1
 vim.g.loaded_getscriptPlugin = 1
 vim.g.loaded_netrwFileHandlers = 1
+
+require("alopezmtz.lazy")
+require("alopezmtz.opts")
+require("alopezmtz.keybinds")
+
