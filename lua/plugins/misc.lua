@@ -19,6 +19,6 @@ return {
 	},
 	{
 		"github/copilot.vim",
-		event= "VeryLazy"
+		event = "VeryLazy",
 	},
 }
