@@ -1,6 +1,6 @@
 return {
 	"hrsh7th/nvim-cmp",
-	enabled = false,
+	enabled = true,
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
@@ -9,7 +9,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"rafamadriz/friendly-snippets",
-    "onsails/lspkind.nvim"
+		"onsails/lspkind.nvim"
 	},
 
 	config = function()
@@ -46,17 +46,17 @@ return {
 				{ name = "path" },
 			}),
 
-      formatting = {
-        format = require("lspkind").cmp_format({
-          mode = "symbol_text",
-          menu = {
-            buffer = "[BUF]",
-            nvim_lsp = "[LSP]",
-            path = "[PATH]",
-            luasnip = "[SNIP]"
-          }
-        })
-      }
-    })
-  end,
+			formatting = {
+				format = require("lspkind").cmp_format({
+					mode = "symbol_text",
+					menu = {
+						buffer = "[BUF]",
+						nvim_lsp = "[LSP]",
+						path = "[PATH]",
+						luasnip = "[SNIP]"
+					}
+				})
+			}
+		})
+	end,
 }

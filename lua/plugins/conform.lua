@@ -1,12 +1,12 @@
 return {
 	"stevearc/conform.nvim",
 	event = { "BufReadPre", "BufNewFile" },
-	enabled = false,
+	enabled = true,
 	cmd = { "ConformInfo" },
 	keys = {
 		{
 			-- Customize or remove this keymap to your liking
-			"<leader>cf",
+			"<leader>vcf",
 			function()
 				require("conform").format({ async = true, lsp_fallback = true })
 			end,

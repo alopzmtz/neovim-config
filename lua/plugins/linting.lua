@@ -1,10 +1,10 @@
 return {
 	"mfussenegger/nvim-lint",
 	event = { "BufReadPre", "BufNewFile" },
-	enabled = false,
+	enabled = true,
 	keys = {
 		{
-			"<leader>l",
+			"<leader>vl",
 			function()
 				require("lint").try_lint()
 			end,
