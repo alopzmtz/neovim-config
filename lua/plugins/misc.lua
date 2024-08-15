@@ -2,12 +2,10 @@ return {
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
-		config = true,
 	},
 	{
 		"tpope/vim-fugitive",
 		event = "VeryLazy",
-		enabled = false,
 	},
 	{
 		"lewis6991/gitsigns.nvim",

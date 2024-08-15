@@ -1,7 +1,7 @@
 vim.opt.mouse = "a"
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = {"80", "120"}
 vim.opt.termguicolors = true
 vim.opt.isfname:append("@-@")
 vim.opt.clipboard = "unnamedplus"

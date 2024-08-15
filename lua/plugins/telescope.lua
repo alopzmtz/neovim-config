@@ -66,6 +66,7 @@ return {
 
 		telescope.setup({
 			defaults = {
+				path_display = { "filename_first" },
 				sorting_strategy = "ascending",
 				layout_strategy = "horizontal",
 				layout_config = {

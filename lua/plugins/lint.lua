@@ -4,7 +4,7 @@ return {
 	enabled = true,
 	keys = {
 		{
-			"<leader>vl",
+			"<leader>ln",
 			function()
 				require("lint").try_lint()
 			end,
