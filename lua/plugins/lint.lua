@@ -9,7 +9,7 @@ return {
 				require("lint").try_lint()
 			end,
 			mode = "n",
-			desc = "Trigger linting for current file",
+			desc= "Trigger linting for current file",
 		},
 	},
 	config = function()

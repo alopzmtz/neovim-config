@@ -7,6 +7,7 @@ return {
 				theme = "catppuccin",
 				globalstatus = true,
 			},
+
 			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
@@ -15,7 +16,14 @@ return {
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},
-			extensions = { "nvim-tree", "fugitive", "lazy", "mason" },
+
+			extensions = {
+				"neo-tree",
+				"nvim-tree",
+				"fugitive",
+				"mason",
+				"lazy",
+			},
 		})
 	end,
 }

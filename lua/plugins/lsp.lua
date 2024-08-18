@@ -30,7 +30,6 @@ return {
 
 		mlspconfig.setup({
 			ensure_installed = {
-				-- Lsp
 				"gopls",
 				"lua_ls",
 				"tsserver",
