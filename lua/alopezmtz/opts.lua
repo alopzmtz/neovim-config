@@ -1,7 +1,7 @@
 vim.opt.mouse = "a"
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = {"80", "120"}
+vim.opt.colorcolumn = { "120" }
 vim.opt.termguicolors = true
 vim.opt.isfname:append("@-@")
 vim.opt.clipboard = "unnamedplus"
@@ -21,7 +21,7 @@ vim.opt.wrap = false
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
-vim.opt.autoindent  = true
+vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 -- folding
