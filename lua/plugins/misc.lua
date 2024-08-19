@@ -5,10 +5,6 @@ return {
 		config = true
 	},
 	{
-		"tpope/vim-fugitive",
-		event = "VeryLazy",
-	},
-	{
 		"lewis6991/gitsigns.nvim",
 		event = "BufRead",
 		config = true,

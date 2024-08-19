@@ -4,7 +4,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons",
-		"MunifTanjim/nui.nvim"
+		"MunifTanjim/nui.nvim",
 	},
 	config = function()
 		local neotree = require("neo-tree")
@@ -12,7 +12,7 @@ return {
 		neotree.setup({
 			window = {
 				position = "float",
-				auto_expand_width = true
+				auto_expand_width = true,
 			},
 
 			filterd_items = {
@@ -20,7 +20,7 @@ return {
 				hide_by_name = {
 					".git",
 					"node_modules",
-				}
+				},
 			},
 
 			event_handlers = {
@@ -28,7 +28,7 @@ return {
 					event = "file_open_requested",
 					handler = function()
 						require("neo-tree.command").execute({ action = "close" })
-					end
+					end,
 				},
 				{
 					event = "neo_tree_buffer_enter",
@@ -42,12 +42,11 @@ return {
 						vim.cmd("highlight! Cursor guibg=#5f87af blend=0")
 					end,
 				},
-			}
+			},
 		})
 
 		vim.keymap.set("n", "<Leader>e", "<CMD>Neotree toggle<CR>", { silent = true, noremap = true })
-	end
-
+	end,
 }
 
 --{
