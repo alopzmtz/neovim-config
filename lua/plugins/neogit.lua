@@ -5,6 +5,12 @@ return {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim"
 		},
-		config = true
+		config = function()
+			local neogit = require("neogit")
+
+			neogit.setup({
+				kind = "replace"
+			})
+		end
 	}
 }
