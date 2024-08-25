@@ -24,6 +24,12 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
+-- backup options
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir"
+vim.opt.undofile = true
+
 -- folding
 vim.opt.foldenable = false
 vim.opt.foldmethod = "expr"
