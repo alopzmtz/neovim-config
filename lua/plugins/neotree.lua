@@ -1,6 +1,5 @@
 return {
 	"nvim-neo-tree/neo-tree.nvim",
-	branch = "v3.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons",
@@ -11,15 +10,26 @@ return {
 
 		neotree.setup({
 			window = {
-				position = "float",
+				position = "current",
 				auto_expand_width = true,
 			},
 
-			filterd_items = {
-				hide_gitignored = true,
-				hide_by_name = {
-					".git",
-					"node_modules",
+			filesystem = {
+				filtered_items = {
+					hide_gitignored = true,
+					hide_dotfiles = true,
+					hide_by_name = { "node_modules" },
+					always_show = {
+						".gitignore",
+					},
+					always_show_by_pattern = {
+						".prettier*",
+						".eslint*",
+						".env*",
+					},
+					never_show = {
+						".git",
+					},
 				},
 			},
 
