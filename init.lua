@@ -25,4 +25,4 @@ vim.g.loaded_netrwFileHandlers = 1
 require("alopezmtz.lazy")
 require("alopezmtz.opts")
 require("alopezmtz.keybinds")
-
+require("alopezmtz.commands")
