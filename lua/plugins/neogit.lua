@@ -5,16 +5,7 @@ return {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim",
 		},
-		keys = {
-			{
-				"<leader>gs",
-				function()
-					require("neogit").open()
-				end,
-				mode = "n",
-				desc = "Open Neogit",
-			},
-		},
+		event = "VeryLazy",
 		config = function()
 			local neogit = require("neogit")
 
