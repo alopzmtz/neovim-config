@@ -67,14 +67,6 @@ return {
 			telescope.setup({
 				defaults = {
 					path_display = { "filename_first" },
-					sorting_strategy = "ascending",
-					layout_strategy = "horizontal",
-					layout_config = {
-						horizontal = {
-							prompt_position = "top",
-						},
-					},
-
 					-- `hidden = true` is not supported in text grep commands.
 					vimgrep_arguments = vimgrep_arguments,
 				},
