@@ -9,7 +9,9 @@ return {
 		config = function()
 			local neogit = require("neogit")
 
-			neogit.setup({})
+			neogit.setup({
+				kind = "auto",
+			})
 
 			vim.keymap.set("n", "<leader>gs", "<cmd>Neogit<cr>", { noremap = true, silent = true })
 		end,
