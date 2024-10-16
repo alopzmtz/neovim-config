@@ -2,7 +2,7 @@ return {
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
-		config = true
+		config = true,
 	},
 	{
 		"lewis6991/gitsigns.nvim",
@@ -16,5 +16,18 @@ return {
 	{
 		"github/copilot.vim",
 		event = "VeryLazy",
+	},
+	{
+		"christoomey/vim-tmux-navigator",
+		cmd = {
+			"TmuxNavigateLeft",
+			"TmuxNavigateDown",
+			"TmuxNavigateUp",
+			"TmuxNavigateRight",
+		},
+	},
+	{
+		"mbbill/undotree",
+		cmd = "UndotreeToggle",
 	},
 }

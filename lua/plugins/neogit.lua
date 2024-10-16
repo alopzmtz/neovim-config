@@ -5,7 +5,7 @@ return {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim",
 		},
-		event = "VeryLazy",
+		cmd = "Neogit",
 		config = function()
 			local neogit = require("neogit")
 
@@ -14,8 +14,6 @@ return {
 
 				commit_editor = { kind = "auto" },
 			})
-
-			vim.keymap.set("n", "<leader>gs", "<cmd>Neogit<cr>", { noremap = true, silent = true })
 		end,
 	},
 }

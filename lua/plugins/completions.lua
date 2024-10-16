@@ -9,7 +9,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"rafamadriz/friendly-snippets",
-		"onsails/lspkind.nvim"
+		"onsails/lspkind.nvim",
 	},
 
 	config = function()
@@ -53,10 +53,10 @@ return {
 						buffer = "[BUF]",
 						nvim_lsp = "[LSP]",
 						path = "[PATH]",
-						luasnip = "[SNIP]"
-					}
-				})
-			}
+						luasnip = "[SNIP]",
+					},
+				}),
+			},
 		})
 	end,
 }
