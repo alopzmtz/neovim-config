@@ -4,7 +4,6 @@ vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = { "120" }
 vim.opt.termguicolors = true
 vim.opt.isfname:append("@-@")
-vim.opt.clipboard = "unnamedplus"
 
 -- line number option
 vim.opt.number = true
