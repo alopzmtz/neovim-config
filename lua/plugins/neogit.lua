@@ -10,7 +10,9 @@ return {
 			local neogit = require("neogit")
 
 			neogit.setup({
-				kind = "auto",
+				kind = "replace",
+
+				commit_editor = { kind = "auto" },
 			})
 
 			vim.keymap.set("n", "<leader>gs", "<cmd>Neogit<cr>", { noremap = true, silent = true })
