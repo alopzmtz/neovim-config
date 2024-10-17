@@ -15,7 +15,6 @@ map("i", "jk", "<ESC>")
 
 map("n", "<leader>bq", "<cmd>bd!<cr>", { desc = "Cerrar buffer actual" })
 map("n", "<leader>s", "<cmd>write!<cr>", { desc = "Guardar archivo" })
-map("n", "<leader>q", "<cmd>quitall!<cr>", { desc = "Salir de Neovim" })
 
 -- Movimiento vertical
 map("n", "<C-d>", "<C-d>zz")
@@ -71,3 +70,11 @@ end, { desc = "Find Current Buffer" })
 map("n", "<leader>fa", function()
 	require("telescope.builtin").find_files({ follow = true, no_ignore = true, hidden = true })
 end, { desc = "Find All Files" })
+
+-- Conform.nvim keymap
+map("", "<leader>vcf", cmd.Format, { desc = "Format buffer" })
+
+-- Nvim-lint keymap
+map("n", "<leader>vln", function()
+	require("lint").try_lint()
+end, { desc = "Trigger linting for current file" })
