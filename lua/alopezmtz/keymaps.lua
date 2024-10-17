@@ -6,12 +6,16 @@ local function map(mode, lhs, rhs, user_opts)
 	vim.keymap.set(mode, lhs, rhs, options)
 end
 
+------------------------------------------------------------------------------------------
+---------------------------------- PLUGINS GENERALES -------------------------------------
+------------------------------------------------------------------------------------------
+
 -- Keybinds generales
 map("i", "jk", "<ESC>")
 
 map("n", "<leader>bq", "<cmd>bd!<cr>", { desc = "Cerrar buffer actual" })
 map("n", "<leader>s", "<cmd>write!<cr>", { desc = "Guardar archivo" })
-map("n", "<leader>q", "<cmd>q!<cr>", { desc = "Salir de Neovim" })
+map("n", "<leader>q", "<cmd>quitall!<cr>", { desc = "Salir de Neovim" })
 
 -- Movimiento vertical
 map("n", "<C-d>", "<C-d>zz")
@@ -25,6 +29,10 @@ map({ "n", "v" }, "<leader>p", '"+p', { desc = "Pegar desde el portapapeles del 
 map("n", "<Leader>h", "<cmd>nohlsearch<CR>", { desc = "Quitar resaltado de búsqueda" })
 map("n", "n", "nzzzv", { desc = "Siguiente resultado de búsqueda y centrar" })
 map("n", "N", "Nzzzv", { desc = "Resultado de búsqueda anterior y centrar" })
+
+------------------------------------------------------------------------------------------
+----------------------------------- PLUGINS KEYMAPS --------------------------------------
+------------------------------------------------------------------------------------------
 
 -- Vim Tmux Navigator
 map("n", "<C-h>", cmd.TmuxNavigateLeft, { desc = "Moverse a la ventana de la izquierda" })
