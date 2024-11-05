@@ -33,6 +33,9 @@ map("n", "N", "Nzzzv", { desc = "Resultado de búsqueda anterior y centrar" })
 ----------------------------------- PLUGINS KEYMAPS --------------------------------------
 ------------------------------------------------------------------------------------------
 
+-- Neotree
+map("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Abrir Neotree" })
+
 -- Vim Tmux Navigator
 map("n", "<C-h>", cmd.TmuxNavigateLeft, { desc = "Moverse a la ventana de la izquierda" })
 map("n", "<C-j>", cmd.TmuxNavigateDown, { desc = "Moverse a la ventana de abajo" })

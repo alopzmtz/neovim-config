@@ -8,11 +8,8 @@ return {
 		cmd = "Neogit",
 		config = function()
 			local neogit = require("neogit")
-
 			neogit.setup({
-				kind = "replace",
-
-				commit_editor = { kind = "auto" },
+				kind = "split",
 			})
 		end,
 	},

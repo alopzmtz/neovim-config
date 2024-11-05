@@ -14,8 +14,8 @@ return {
 		event = "VeryLazy",
 	},
 	{
-		"github/copilot.vim",
-		event = "VeryLazy",
+		"supermaven-inc/supermaven-nvim",
+		config = true,
 	},
 	{
 		"christoomey/vim-tmux-navigator",

@@ -41,6 +41,7 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
+				{ name = "supermaven"}
 			}, {
 				{ name = "buffer", keyword_length = 5 },
 				{ name = "path" },
@@ -54,6 +55,7 @@ return {
 						nvim_lsp = "[LSP]",
 						path = "[PATH]",
 						luasnip = "[SNIP]",
+						Supermaven = ""
 					},
 				}),
 			},
