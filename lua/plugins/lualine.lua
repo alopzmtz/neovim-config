@@ -6,7 +6,6 @@ return {
 
 		lualine.setup({
 			options = {
-				theme = "catppuccin",
 				globalstatus = true,
 			},
 
