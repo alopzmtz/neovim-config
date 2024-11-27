@@ -50,34 +50,25 @@ map("n", "<leader>gs", cmd.Neogit, { desc = "Abrir Neogit" })
 map("n", "<leader>u", cmd.UndotreeToggle, { desc = "Abrir Undotree" })
 
 -- Telescope
-map("n", "<leader>ff", function()
-	require("telescope.builtin").find_files({})
-end, { desc = "Find Files" })
+map("n", "<leader>ff", function() require("telescope.builtin").find_files({}) end, { desc = "Find Files" })
+map("n", "<leader>fb", function() require("telescope.builtin").buffers({}) end, { desc = "Find Buffers" })
+map("n", "<leader>fg", function() require("telescope.builtin").live_grep({}) end, { desc = "Find Grep" })
+map("n", "<leader>fh", function() require("telescope.builtin").help_tags({}) end, { desc = "Find Help" })
 
-map("n", "<leader>fb", function()
-	require("telescope.builtin").buffers({})
-end, { desc = "Find Buffers" })
+map("n", "<leader>fc",
+	function()
+		require("telescope.builtin").current_buffer_fuzzy_find({})
+	end,
+	{ desc = "Find Current Buffer" })
 
-map("n", "<leader>fg", function()
-	require("telescope.builtin").live_grep({})
-end, { desc = "Find Grep" })
-
-map("n", "<leader>fh", function()
-	require("telescope.builtin").help_tags({})
-end, { desc = "Find Help" })
-
-map("n", "<leader>fc", function()
-	require("telescope.builtin").current_buffer_fuzzy_find({})
-end, { desc = "Find Current Buffer" })
-
-map("n", "<leader>fa", function()
-	require("telescope.builtin").find_files({ follow = true, no_ignore = true, hidden = true })
-end, { desc = "Find All Files" })
+map("n", "<leader>fa",
+	function()
+		require("telescope.builtin").find_files({ follow = true, no_ignore = true, hidden = true })
+	end,
+	{ desc = "Find All Files" })
 
 -- Conform.nvim keymap
 map("", "<leader>vcf", cmd.Format, { desc = "Format buffer" })
 
 -- Nvim-lint keymap
-map("n", "<leader>vln", function()
-	require("lint").try_lint()
-end, { desc = "Trigger linting for current file" })
+map("n", "<leader>vln", function() require("lint").try_lint() end, { desc = "Trigger linting for current file" })
