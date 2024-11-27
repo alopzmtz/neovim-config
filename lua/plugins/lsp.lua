@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	enabled = false,
+	enabled = true,
 	event = { "BufReadPre", "BufNewFile" },
 	cmd = { "LspInfo", "LspInstall", "LspUninstall", "Mason" },
 	dependencies = {
