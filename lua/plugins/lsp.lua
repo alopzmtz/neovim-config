@@ -30,7 +30,7 @@ return {
 		-- LSP servers to be installed
 		local servers = {
 			"lua_ls",
-			"tsserver",
+			"ts_ls",
 			"gopls",
 			"rust_analyzer",
 			"cssls",

@@ -30,4 +30,9 @@ return {
 		"mbbill/undotree",
 		cmd = "UndotreeToggle",
 	},
+	{
+		"numToStr/Comment.nvim",
+		event = "BufRead",
+		config = true,
+	},
 }
