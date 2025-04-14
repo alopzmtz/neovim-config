@@ -1,6 +1,7 @@
 return {
-	"folke/tokyonight.nvim",
+	"dracula-pro/vim",
+	name = "dracula_pro",
 	config = function()
-		vim.cmd("colorscheme tokyonight")
+		vim.cmd("colorscheme dracula_pro")
 	end
 }

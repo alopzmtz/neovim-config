@@ -1,6 +1,7 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
+		branch = '0.1.x',
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
 			local telescope = require("telescope")
@@ -70,4 +71,15 @@ return {
 			telescope.load_extension("ui-select")
 		end,
 	},
+
+	-- Deps
+	{
+		'nvim-telescope/telescope-fzf-native.nvim',
+		build = 'make',
+		event = "VeryLazy",
+		config = function()
+			local telescope = require("telescope")
+			telescope.load_extension("fzf")
+		end
+	}
 }
