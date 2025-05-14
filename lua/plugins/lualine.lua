@@ -2,11 +2,9 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons", "arkav/lualine-lsp-progress" },
 	config = function()
-		lualine = require("lualine")
-
-		lualine.setup({
+		require("lualine").setup({
 			options = {
-				theme = "catppuccin-frappe",
+				theme = "dracula-nvim",
 				globalstatus = true,
 			},
 

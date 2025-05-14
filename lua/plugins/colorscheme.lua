@@ -1,8 +1,11 @@
 return {
-	"catppuccin/nvim",
-	name = "catppuccin",
+	"Mofiqul/dracula.nvim",
+	name = "dracula",
 	priority = 1000,
 	config = function()
-		vim.cmd("colorscheme catppuccin-mocha")
+		require("dracula").setup({
+			transparent_bg = true
+		})
+		vim.cmd("colorscheme dracula")
 	end
 }
